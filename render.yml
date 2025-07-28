@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: gestion-empleados-backend
+    env: java
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/gestion-empleados-backend-1.0.jar
+    autoDeploy: true
